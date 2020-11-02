@@ -10,7 +10,8 @@ const options = {
 
 module.exports = new Strategy(options, async (payload, done) => {
     try {
-        const user = await findUserById(payload.id );
+        console.log(payload);
+        const user = await findUserById(payload );
         if (user) {
             return done(null, user);
         } else {

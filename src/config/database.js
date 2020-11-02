@@ -2,10 +2,10 @@ const { createPool, Pool } = require('mysql');
 const { promisify }  = require('util');
 
 const pool = createPool({
-    database: "instagramDb",
-    host: "localhost",
-    user: "root",
-    password: "Gg258789",
+    database: "qlpg7y0bqqfpb70u",
+    host: "h40lg7qyub2umdvb.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    user: "q6nfzv2dhphu5now",
+    password: "lox0muxgx6pbetw4",
 });
 
 pool.getConnection((error, connection) => {
